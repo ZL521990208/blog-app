@@ -1,0 +1,231 @@
+/* 基础样式,规约所有自定义样式统一前缀*/
+
+/* ---------------全局设置-------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+u {
+	list-style: none;
+}
+
+/* ---------------布局设置-------------- */
+.xu-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.xu-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.xu-col-12 {
+	flex: 1 1 100%;
+}
+
+.xu-col-8 {
+	flex: 1 1 66.6%;
+	background-color: rgb(255, 255, 255);
+}
+
+.xu-col-6 {
+	flex: 1 1 50%;
+}
+
+.xu-col-4 {
+	flex: 1 1 33.3%;
+	background-color: rgb(255, 255, 255);
+}
+
+.xu-col-3 {
+	flex: 1 1 25%;
+}
+
+.xu-col-2 {
+	flex: 1 1 16.6%;
+}
+
+.xu-col-1 {
+	flex: 1 1 8.3%;
+}
+
+/* ---------------对齐方式设置-------------- */
+/* flex横向布局的对齐,横向居中，纵向居中 */
+.xu-fx-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* flex横向布局的对齐,横向左对齐，纵向居中 */
+.xu-fx-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* flex横向布局的对齐,横向右对齐，纵向居中 */
+.xu-fx-right {
+	justify-content: flex-end;
+}
+
+/* flex横向布局的对齐,横向两端对齐，纵向居中 */
+.xu-fx-between {
+	justify-content: space-between;
+}
+
+/* flex横向布局的对齐,横向均匀分布，纵向居中 */
+.xu-fx-around {
+	justify-content: space-around;
+}
+
+.xu-center{
+	text-align: center;
+}
+
+/* 指定统一前缀的class样式 */
+[class*='xu-fx'] {
+	display: flex;
+	align-items: center;
+}
+
+/* flex纵向布局的对齐,横向居中，纵向顶端对齐 */
+.xu-fxc-top {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+/* ------------布局设置------------ */
+.yy-container {
+	width: 80%;
+	margin: 0 auto;
+	height: 600px;
+}
+
+.yy-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.yy-col-12 {
+	flex: 1 1 100%;
+}
+
+.yy-col-11{
+	flex: 1 1 90%;
+}
+
+.yy-col-8 {
+	flex: 1 1 66.3%;
+}
+
+.yy-col-6 {
+	flex: 1 1 50%;
+}
+
+.yy-col-4 {
+	flex: 1 1 33.3%;
+}
+
+.yy-col-3 {
+	flex: 1 1 25%;
+}
+
+.yy-col-2 {
+	flex: 1 1 16.6%;
+}
+
+.yy-col-1 {
+	flex: 1 1 8.6%;
+}
+
+/* ------------对齐方式设置------------ */
+/* flex横向布局对齐方式,主副轴均居中 */
+.yy-fx-center {
+	justify-content: center;
+}
+
+/* flex横向布局对齐方式,主轴居中,副轴顶端对齐 */
+.yy-fx-start {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/* flex横向布局对齐方式,主轴左对齐,副轴居中 */
+.yy-fx-left {
+	justify-content: flex-start;
+}
+
+/* flex横向布局对齐方式,主轴右对齐,副轴居中 */
+.yy-fx-right {
+	justify-content: flex-end;
+}
+
+/* flex横向布局对齐方式,主轴两端对齐,副轴居中 */
+.yy-fx-between {
+	justify-content: space-between;
+}
+
+/* flex横向布局对齐方式,主轴均匀分布,副轴居中 */
+.yy-fx-around {
+	justify-content: space-around;
+}
+
+.yy-center {
+	text-align: center;
+}
+
+/* 指定统一前缀的class样式 */
+[class*='yy-fx'] {
+	display: flex;
+	align-items: center;
+}
+
+
+/* ------------字体设置------------ */
+.yy-font-white {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: SimSun;
+	font-weight: 600;
+}
+
+.yy-font-black {
+	color: black;
+	font-size: 20px;
+	font-family: SimSun;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	/* project id 1513323 */
+	src: url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.eot');
+	src: url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.woff') format('woff'),
+		url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_1513323_e63pmlrj1ec.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	cursor: pointer;
+	font-size: 22px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------颜色设置------------ */
